@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: BOLD-Head;
+    src: url(/fonts/Heading-Now-Variable.ttf);
+}
+
+@font-face {
+    font-family: best;
+    src: url(/fonts/newwwww.woff2);
+}
+::selection{
+    color: rgb(184, 128, 23);
+}
+
+.newfont,
+.skillword,
+.codeMover,
+#contact, 
+.aboutmeHeading,
+.resume,
+.endHeadings
+ {
+    font-family: best;
+}
+
+.headingsCont h4 {
+    font-family: best;
+}
+
+/* @font-face {
+    font-family: generalsans;
+    src: url(/GeneralSans-Medium.otf);
+} */
+
+.skillheadings {
+    font-family: "BOLD-Head";
+    font-stretch: 500%;
+
+}
+
+.aboutmeHeading {
+    display: flex;
+    flex-wrap: nowrap;
+    /* gap: 9px; */
+    opacity: 0.6;
+
+}
+.bggg{
+    background-color: #fff;
+box-shadow:
+0 0 60px 30px #fff,  /* inner white */
+0 0 100px 60px #f0f, /* middle magenta */
+0 0 140px 90px #0ff; /* outer cyan */
+}
+
+.aboutmeHeading h1 {
+    color: rgb(65, 65, 65);
+    /* margin: 0 2px; */
+    display: inline;
+    white-space: no-wrap;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: "BOLD-Head";
+    font-stretch: 600%;
+}
+
+
+.personalLink{
+    position: relative;
+    /* overflow: hidden; */
+    font-weight: 500;
+}
+.personalLink::before{
+    content: '';
+    width: 0;
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    bottom: -2px;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+.personalLink:hover::before{
+    /* left: 0; */
+    width: 100%;
+    opacity: 1;
+}
+
